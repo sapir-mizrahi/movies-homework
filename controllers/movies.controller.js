@@ -6,8 +6,6 @@ const port = process.env.PORT;
 const axios = require('axios')
 
 const getTop10Movies = async (req, res) => {
-console.log("porttt", port);
-console.log("omdb", omdbKey);
   let topMovies = []
   let typesOfMovies = ["Disaster", "Epic", "war", "kids", "Silent", "Horror", "Anthology", "comedia", "dark", "documentary"];
   await Promise.all(typesOfMovies.map(async (movie) => {

@@ -7,7 +7,6 @@ const moviesRoute = require("./routes/movies.route");
 var path = require('path')
 
 app.listen(port, () => {
-console.log("porttt", port);
 
   console.log(`App listening at http://localhost:${port}`);
 });
