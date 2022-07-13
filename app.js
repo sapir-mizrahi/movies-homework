@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
-const port = process.env.PORT;
+const port = 4000;
 
 const moviesRoute = require("./routes/movies.route");
 var path = require('path')
