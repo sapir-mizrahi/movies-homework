@@ -2,10 +2,13 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const port = process.env.PORT;
+
 const moviesRoute = require("./routes/movies.route");
 var path = require('path')
 
 app.listen(port, () => {
+console.log("porttt", port);
+
   console.log(`App listening at http://localhost:${port}`);
 });
 
